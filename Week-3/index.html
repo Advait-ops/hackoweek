@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Marathon Registration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="form-box">
+  <h2>Symbithon</h2>
+
+  <!-- STEP CONTROLS -->
+  <input type="radio" name="step" id="step1" checked>
+  <input type="radio" name="step" id="step2">
+  <input type="radio" name="step" id="step3">
+  <input type="radio" name="step" id="step4">
+
+  <div class="steps">
+
+    <!-- STEP 1 -->
+    <div class="step step-1">
+      <label class="title">Full Name</label>
+      <input type="text" required>
+
+      <label class="title">Email</label>
+      <input type="email" required>
+
+      <div class="buttons">
+        <span></span>
+        <label for="step2" class="btn">Next</label>
+      </div>
+    </div>
+
+    <!-- STEP 2 -->
+<div class="step step-2">
+  <label class="title">Choose Distance</label>
+
+  <div class="distance-options">
+    <label>
+      <input type="radio" name="distance" value="5km" required>
+      5 KM
+    </label>
+
+    <label>
+      <input type="radio" name="distance" value="8km">
+      8 KM
+    </label>
+
+    <label>
+      <input type="radio" name="distance" value="21km">
+      21 KM (Half Marathon)
+    </label>
+
+    <label>
+      <input type="radio" name="distance" value="42km">
+      42 KM (Full Marathon)
+    </label>
+  </div>
+
+  <div class="buttons">
+    <label for="step1" class="btn secondary">Back</label>
+    <label for="step3" class="btn">Next</label>
+  </div>
+</div>
+
+
+    <!-- STEP 3 -->
+    <div class="step step-3">
+      <label class="title">Emergency Contact</label>
+      <input type="text">
+
+      <label class="title">Phone Number</label>
+      <input type="tel">
+
+      <div class="summary">
+        <strong>Race Day:</strong> Sunday, 7:00 AM<br>
+        <strong>Location:</strong> Seminary Hills<br>
+        <strong>Note:</strong> Bibs collected on race day
+      </div>
+
+      <div class="buttons">
+        <label for="step2" class="btn secondary">Back</label>
+        <label for="step4" class="btn">Next</label>
+      </div>
+    </div>
+
+    <!-- STEP 4 -->
+    <div class="step step-4">
+      <label class="title">Upload Payment QR / Screenshot</label>
+      <input type="file" accept="image/*" required>
+
+      <div class="summary">
+        Upload payment proof after scanning the official QR.<br>
+        Accepted formats: JPG, PNG
+      </div>
+
+      <div class="buttons">
+        <label for="step3" class="btn secondary">Back</label>
+        <button type="submit" class="btn">Submit Registration</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

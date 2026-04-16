@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ===================== */
+/* FORM BOX WITH 3D BORDER */
+/* ===================== */
+
+.form-box {
+  width: 680px;
+  height: 680px;
+  padding: 62px;
+  border-radius: 100px;
+
+  background:
+    linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
+    url(run-fest-vibrant-sports-poster-vector-21565253.jpg) center/cover no-repeat;
+
+  border: 2px solid #2c2c2c;
+
+  box-shadow:
+    0 8px 0 #1a1a1a,              /* hard 3D depth */
+    0 20px 40px rgba(0,0,0,0.35); /* soft shadow */
+
+  backdrop-filter: blur(6px);
+}
+
+/* ===================== */
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Hide ONLY step control radios */
+input[name="step"] {
+  display: none;
+}
+
+.step {
+  display: none;
+  padding: 10px 0;
+}
+
+#step1:checked ~ .steps .step-1,
+#step2:checked ~ .steps .step-2,
+#step3:checked ~ .steps .step-3,
+#step4:checked ~ .steps .step-4 {
+  display: block;
+}
+
+.title {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.distance-options label {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.summary {
+  background: #f0f0f0;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 22px;
+  background: #12161a;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+.btn.secondary {
+  background: #6c757d;
+}
